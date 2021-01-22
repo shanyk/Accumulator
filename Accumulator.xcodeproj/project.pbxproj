@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D7DF09825BB681F00E01FA8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7DF09725BB681F00E01FA8 /* Launch Screen.storyboard */; };
 		1DFA403F25B9D8BD00D35B0C /* AccumulatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA403E25B9D8BD00D35B0C /* AccumulatorApp.swift */; };
 		1DFA404125B9D8BD00D35B0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA404025B9D8BD00D35B0C /* ContentView.swift */; };
 		1DFA404325B9D8BF00D35B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA404225B9D8BF00D35B0C /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D7DF09725BB681F00E01FA8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1DFA403B25B9D8BD00D35B0C /* Accumulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accumulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA403E25B9D8BD00D35B0C /* AccumulatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulatorApp.swift; sourceTree = "<group>"; };
 		1DFA404025B9D8BD00D35B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D7DF09425BB67B300E01FA8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1DFA404025B9D8BD00D35B0C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1D7DF09525BB67BB00E01FA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1D7DF09625BB67C300E01FA8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1DFA403225B9D8BD00D35B0C = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +123,16 @@
 		1DFA403D25B9D8BD00D35B0C /* Accumulator */ = {
 			isa = PBXGroup;
 			children = (
+				1D7DF09625BB67C300E01FA8 /* Components */,
+				1D7DF09525BB67BB00E01FA8 /* Models */,
+				1D7DF09425BB67B300E01FA8 /* Views */,
 				1DFA403E25B9D8BD00D35B0C /* AccumulatorApp.swift */,
-				1DFA404025B9D8BD00D35B0C /* ContentView.swift */,
 				1DFA404225B9D8BF00D35B0C /* Assets.xcassets */,
 				1DFA404725B9D8BF00D35B0C /* Persistence.swift */,
 				1DFA404C25B9D8BF00D35B0C /* Info.plist */,
 				1DFA404925B9D8BF00D35B0C /* Accumulator.xcdatamodeld */,
 				1DFA404425B9D8BF00D35B0C /* Preview Content */,
+				1D7DF09725BB681F00E01FA8 /* Launch Screen.storyboard */,
 			);
 			path = Accumulator;
 			sourceTree = "<group>";
@@ -239,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7DF09825BB681F00E01FA8 /* Launch Screen.storyboard in Resources */,
 				1DFA404625B9D8BF00D35B0C /* Preview Assets.xcassets in Resources */,
 				1DFA404325B9D8BF00D35B0C /* Assets.xcassets in Resources */,
 			);
