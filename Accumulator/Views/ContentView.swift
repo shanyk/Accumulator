@@ -17,25 +17,37 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-      NavigationView {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-            }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-          HStack {
-            #if os(iOS)
-            EditButton()
-            #endif
-
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
-            }
-          
+//      NavigationView {
+//        List {
+//            ForEach(items) { item in
+//                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//            }
+//            .onDelete(perform: deleteItems)
+//        }
+//        .toolbar {
+//          HStack {
+//            #if os(iOS)
+//            EditButton()
+//            #endif
+//
+//            Button(action: addItem) {
+//                Label("Add Item", systemImage: "plus")
+//            }
+//
+//          }
+//        }
+//      }
+      TabView {
+        HomeView()
+          .tabItem {
+            Image(systemName: "clock")
+            Text("Home")
           }
-        }
+        DataView()
+          .tabItem {
+            Image(systemName: "chart.pie")
+            Text("Hours")
+          }
       }
         
     }
