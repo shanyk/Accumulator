@@ -12,7 +12,16 @@ struct HomeView: View {
   
   // MARK: - BODY
   var body: some View {
-    Text("Home View Here")
+    VStack {
+      CurrentActivityComponent()
+      
+      Divider()
+        .frame(width: 200)
+      
+      ActivityListComponent()
+      
+      Spacer()
+    }
   }
 }
 

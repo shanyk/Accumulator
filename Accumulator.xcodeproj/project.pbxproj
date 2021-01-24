@@ -10,6 +10,10 @@
 		1D7DF09825BB681F00E01FA8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D7DF09725BB681F00E01FA8 /* Launch Screen.storyboard */; };
 		1DB2C3F225BCB8BE009F50E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C3F125BCB8BE009F50E7 /* HomeView.swift */; };
 		1DB2C3F725BCB9D6009F50E7 /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C3F625BCB9D6009F50E7 /* DataView.swift */; };
+		1DB2C40425BDD146009F50E7 /* CurrentActivityComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C40325BDD146009F50E7 /* CurrentActivityComponent.swift */; };
+		1DB2C40925BDD7CE009F50E7 /* ActivityListComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C40825BDD7CE009F50E7 /* ActivityListComponent.swift */; };
+		1DB2C40E25BDDFF3009F50E7 /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C40D25BDDFF3009F50E7 /* ActivityModel.swift */; };
+		1DB2C41E25BDFDFD009F50E7 /* EditActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB2C41D25BDFDFD009F50E7 /* EditActivitiesView.swift */; };
 		1DFA403F25B9D8BD00D35B0C /* AccumulatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA403E25B9D8BD00D35B0C /* AccumulatorApp.swift */; };
 		1DFA404125B9D8BD00D35B0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DFA404025B9D8BD00D35B0C /* ContentView.swift */; };
 		1DFA404325B9D8BF00D35B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DFA404225B9D8BF00D35B0C /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 		1D7DF09725BB681F00E01FA8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		1DB2C3F125BCB8BE009F50E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1DB2C3F625BCB9D6009F50E7 /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
+		1DB2C40325BDD146009F50E7 /* CurrentActivityComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentActivityComponent.swift; sourceTree = "<group>"; };
+		1DB2C40825BDD7CE009F50E7 /* ActivityListComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityListComponent.swift; sourceTree = "<group>"; };
+		1DB2C40D25BDDFF3009F50E7 /* ActivityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
+		1DB2C41D25BDFDFD009F50E7 /* EditActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditActivitiesView.swift; sourceTree = "<group>"; };
 		1DFA403B25B9D8BD00D35B0C /* Accumulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Accumulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DFA403E25B9D8BD00D35B0C /* AccumulatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumulatorApp.swift; sourceTree = "<group>"; };
 		1DFA404025B9D8BD00D35B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +96,7 @@
 				1DFA404025B9D8BD00D35B0C /* ContentView.swift */,
 				1DB2C3F125BCB8BE009F50E7 /* HomeView.swift */,
 				1DB2C3F625BCB9D6009F50E7 /* DataView.swift */,
+				1DB2C41D25BDFDFD009F50E7 /* EditActivitiesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +104,7 @@
 		1D7DF09525BB67BB00E01FA8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				1DB2C40D25BDDFF3009F50E7 /* ActivityModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,6 +112,8 @@
 		1D7DF09625BB67C300E01FA8 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				1DB2C40325BDD146009F50E7 /* CurrentActivityComponent.swift */,
+				1DB2C40825BDD7CE009F50E7 /* ActivityListComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -301,8 +313,12 @@
 			files = (
 				1DB2C3F725BCB9D6009F50E7 /* DataView.swift in Sources */,
 				1DFA404B25B9D8BF00D35B0C /* Accumulator.xcdatamodeld in Sources */,
+				1DB2C40E25BDDFF3009F50E7 /* ActivityModel.swift in Sources */,
+				1DB2C40925BDD7CE009F50E7 /* ActivityListComponent.swift in Sources */,
 				1DFA404825B9D8BF00D35B0C /* Persistence.swift in Sources */,
+				1DB2C41E25BDFDFD009F50E7 /* EditActivitiesView.swift in Sources */,
 				1DFA404125B9D8BD00D35B0C /* ContentView.swift in Sources */,
+				1DB2C40425BDD146009F50E7 /* CurrentActivityComponent.swift in Sources */,
 				1DB2C3F225BCB8BE009F50E7 /* HomeView.swift in Sources */,
 				1DFA403F25B9D8BD00D35B0C /* AccumulatorApp.swift in Sources */,
 			);
